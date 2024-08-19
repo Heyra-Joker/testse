@@ -1,11 +1,9 @@
-# -*- encoding: utf-8 -*-
 import requests
 
 cookies = {
-    '_ga': 'GA1.1.1083277715.1723979148',
-    'NOTLOGIN': 'NOTLOGIN',
-    '_cfuvid': 'svGWvcGdB6cc3M8h86MPRgxfz2lud__J8i1r5Fx.dzY-1723984155000-0.0.1.1-604800000',
-    '_ga_Y2CH3RXB10': 'GS1.1.1723979147.1.1.1723984158.0.0.0',
+    '_ga': 'GA1.1.1823280214.1723554309',
+    '_cfuvid': 'CQmLgsCwwk55TGcSV97s1GSr54NIIHk0fTxGxn0u.C4-1724078230485-0.0.1.1-604800000',
+    '_ga_Y2CH3RXB10': 'GS1.1.1724078232.3.1.1724078265.0.0.0',
 }
 
 headers = {
@@ -13,12 +11,12 @@ headers = {
     'accept-language': 'zh-CN,zh;q=0.9',
     'cache-control': 'no-cache',
     'content-type': 'application/json',
-    # 'cookie': '_ga=GA1.1.1083277715.1723979148; NOTLOGIN=NOTLOGIN; _cfuvid=svGWvcGdB6cc3M8h86MPRgxfz2lud__J8i1r5Fx.dzY-1723984155000-0.0.1.1-604800000; _ga_Y2CH3RXB10=GS1.1.1723979147.1.1.1723984158.0.0.0',
+    # 'cookie': '_ga=GA1.1.1823280214.1723554309; _cfuvid=CQmLgsCwwk55TGcSV97s1GSr54NIIHk0fTxGxn0u.C4-1724078230485-0.0.1.1-604800000; _ga_Y2CH3RXB10=GS1.1.1724078232.3.1.1724078265.0.0.0',
     'origin': 'https://haijiao.pro',
     'pcver': '2',
     'pragma': 'no-cache',
     'priority': 'u=1, i',
-    'referer': 'https://haijiao.pro/login',
+    'referer': 'https://haijiao.pro/register',
     'sec-ch-ua': '"Not)A;Brand";v="99", "Google Chrome";v="127", "Chromium";v="127"',
     'sec-ch-ua-mobile': '?0',
     'sec-ch-ua-platform': '"macOS"',
@@ -31,14 +29,21 @@ headers = {
 json_data = {
     'username': 'hwwerwe',
     'password': 'hwwerwe',
+    'rpassword': 'hwwerwe',
     'referid': None,
-    'locked': '1',
+    'locked': None,
 }
 
-response = requests.post('https://haijiao.pro/api/login/signin',  headers=headers, json=json_data)
+proxy = {
+    "https": "http://127.0.0.1:7890",
+    "http": "http://127.0.0.1:7890"
+}
+
+
+response = requests.post('https://haijiao.pro/api/login/signup', headers=headers, json=json_data, proxies=proxy)
 print(response.text)
 
 # Note: json_data will not be serialized by requests
 # exactly as it was in the original request.
-#data = '{"username":"447592774","password":"447592774","referid":null,"locked":"1"}'
-#response = requests.post('https://haijiao.pro/api/login/signin', cookies=cookies, headers=headers, data=data)
+#data = '{"username":"hw83748","password":"hw83748","rpassword":"hw83748","referid":null,"locked":null}'
+#response = requests.post('https://haijiao.pro/api/login/signup', cookies=cookies, headers=headers, data=data)
