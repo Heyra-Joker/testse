@@ -38,6 +38,8 @@ json_data = {
 response = requests.post('https://haijiao.pro/api/topic/buy/sell',  headers=headers, json=json_data)
 print(response.text)
 
+# https://hjxx7.top/ 账号通用
+
 # {"isEncrypted":false,"errorCode":0,"message":"","success":true,"data":null}
 
 # Note: json_data will not be serialized by requests
