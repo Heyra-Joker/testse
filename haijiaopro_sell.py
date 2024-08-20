@@ -27,7 +27,7 @@ headers = {
     'sec-fetch-site': 'same-origin',
     'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36',
     'x-user-id': '3117571',
-    'x-user-token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiaHd3ZXJ3ZSIsImlkIjozMTE3NTcxLCJpYXQiOjE3MjQwNzg3NjgsImV4cCI6MTczMjcxODc2OH0.-7mTVheLp7uULGnoKZeGmNmDCf3AHqbt9_My8Qd7i6s',
+    'x-user-token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiNWw2MnBlIiwiaWQiOjMxMjE3NzAsImlhdCI6MTcyNDE2NDM0NywiZXhwIjoxNzMyODA0MzQ3fQ.XJckKcBqhze3aD3wbBA-9ULVQcqJ_OOKbcZBxInFdPw'
 }
 
 json_data = {
@@ -35,7 +35,7 @@ json_data = {
 }
 
 # 购买接口, 注意可以重复购买
-response = requests.post('https://haijiao.pro/api/topic/buy/sell',  headers=headers, json=json_data)
+response = requests.post('https://hjxx7.top/api/topic/buy/sell',  headers=headers, json=json_data)
 print(response.text)
 
 # https://hjxx7.top/ 账号通用

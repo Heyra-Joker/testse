@@ -1,3 +1,5 @@
+import time
+
 import requests
 
 cookies = {
@@ -25,11 +27,11 @@ headers = {
     'sec-fetch-site': 'same-origin',
     'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36',
     'x-user-id': '3117571',
-    'x-user-token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiaHd3ZXJ3ZSIsImlkIjozMTE3NTcxLCJpYXQiOjE3MjQwNzg3NjgsImV4cCI6MTczMjcxODc2OH0.-7mTVheLp7uULGnoKZeGmNmDCf3AHqbt9_My8Qd7i6s',
+    'x-user-token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiNWw2MnBlIiwiaWQiOjMxMjE3NzAsImlhdCI6MTcyNDE2NDM0NywiZXhwIjoxNzMyODA0MzQ3fQ.XJckKcBqhze3aD3wbBA-9ULVQcqJ_OOKbcZBxInFdPw'
 }
 
 params = {
-    'date': '1724078797750',
+    'date': str(int(time.time() * 1000)),
 }
 
 response = requests.get('https://haijiao.pro/api/user/current', params=params, headers=headers)
