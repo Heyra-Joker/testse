@@ -28,14 +28,14 @@ headers = {
     'sec-fetch-site': 'same-origin',
     'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36',
     # 'x-user-id': '3026417',
-    'x-user-token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiNDQ3NTkyNzc0IiwiaWQiOjMwMjY0MTcsImlhdCI6MTcyMzk4NDE2MiwiZXhwIjoxNzMyNjI0MTYyfQ.HxWvEr48DYlI0uBAbUOwubx5tQk8qzsJmbDroEgKbcs'
+    'x-user-token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoidm5xbGNidm9tIiwiaWQiOjMxMjY3NDUsImlhdCI6MTcyNDIzNjMyMiwiZXhwIjoxNzMyODc2MzIyfQ.L26bos9iJhRLdHlY-zdMUndy-S6l2vVQ5FQlOG7lrUA',
 }
 
 proxy = {
-    'http': 'http://127.0.0.1:7890',
-    'https': 'http://127.0.0.1:7890',
+    # 'http': 'http://127.0.0.1:7890',
+    # 'https': 'http://127.0.0.1:7890',
 }
-response = requests.get('https://haijiao.pro/api/topic/63566', proxies=proxy, headers=headers)
+response = requests.get('https://hjxx7.top/api/topic/665329', proxies=proxy, headers=headers)
 print(response.text)
 
 # 666888

@@ -27,11 +27,11 @@ headers = {
     'sec-fetch-site': 'same-origin',
     'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36',
     'x-user-id': '3117571',
-    'x-user-token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiaHd3ZXJ3ZSIsImlkIjozMTE3NTcxLCJpYXQiOjE3MjQwNzg3NjgsImV4cCI6MTczMjcxODc2OH0.-7mTVheLp7uULGnoKZeGmNmDCf3AHqbt9_My8Qd7i6s',
+    'x-user-token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoidm5xbGNidm9tIiwiaWQiOjMxMjY3NDUsImlhdCI6MTcyNDIzNjMyMiwiZXhwIjoxNzMyODc2MzIyfQ.L26bos9iJhRLdHlY-zdMUndy-S6l2vVQ5FQlOG7lrUA',
 }
 
 json_data = {
-    'topic_id': 45997,
+    'topic_id': 665329,
 }
 
 # 购买接口, 注意可以重复购买

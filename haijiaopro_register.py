@@ -27,9 +27,9 @@ headers = {
 }
 
 json_data = {
-    'username': 'hwwerwe',
-    'password': 'hwwerwe',
-    'rpassword': 'hwwerwe',
+    'username': 'hwwerwe2',
+    'password': 'hwwerwe2',
+    'rpassword': 'hwwerwe2',
     'referid': None,
     'locked': None,
 }
