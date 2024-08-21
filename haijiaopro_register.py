@@ -35,12 +35,12 @@ json_data = {
 }
 
 proxy = {
-    "https": "http://127.0.0.1:7890",
-    "http": "http://127.0.0.1:7890"
+    # "https": "http://127.0.0.1:7890",
+    # "http": "http://127.0.0.1:7890"
 }
 
 
-response = requests.post('https://haijiao.pro/api/login/signup', headers=headers, json=json_data, proxies=proxy)
+response = requests.post('https://hjxx7.top/api/login/signup', headers=headers, json=json_data, proxies=proxy)
 print(response.text)
 
 # Note: json_data will not be serialized by requests
