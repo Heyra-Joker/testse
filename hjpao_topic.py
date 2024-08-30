@@ -35,7 +35,7 @@ proxy = {
     # 'http': 'http://127.0.0.1:7890',
     # 'https': 'http://127.0.0.1:7890',
 }
-response = requests.get('https://hjxx7.top/api/topic/1423161', proxies=proxy, headers=headers)
+response = requests.get('https://hjxx7.top/api/topic/503530', proxies=proxy, headers=headers)
 print(response.text)
 
 # 666888
